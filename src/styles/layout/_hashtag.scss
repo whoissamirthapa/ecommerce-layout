@@ -1,0 +1,109 @@
+@import "../abstract/variable";
+
+.hashtag_container{
+    border: $mainBorder;
+    color: black;
+    width: 80%;
+    margin: auto;
+    margin-top: 4rem;
+    .tags_here{
+        border-bottom: $mainBorder;
+        display: flex;
+        justify-content: space-between;
+        padding: 0rem 1rem;
+        .tag_arrow_icon{
+            font-size: 2rem;
+            margin-top: 1rem;
+            cursor: pointer;
+        }
+        ol{
+            list-style: none;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            padding: 0 2rem;
+            overflow-x: scroll;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;
+            li{
+                height: 4rem;
+                padding-top: 1rem;
+                font-size: 1.5rem;
+                cursor: pointer;
+                font-weight: 400;
+            
+            }
+            .active_tag{
+                color: $primaryColor;
+                text-decoration: underline;
+                text-decoration-thickness: 0.2rem;
+            }
+        }
+    }
+    .tag_product_container{
+        margin-top: 2rem;
+        padding: 2rem 1rem;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .tag_indv_product{
+            width: 29rem;
+            border: $mainBorder;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            .indv_featured_img{
+                img{
+                    width: 100%;
+                    max-width: 27rem;
+                }
+            }
+            .indv_product_title{
+                display: flex;
+                justify-content: space-between;
+                font-size: 1.5rem;
+                margin-top: 1rem;
+                .indv_pdt_title{
+                    font-weight: 500;
+                    font-size: 1.5rem;
+                }
+                .indv_pdt_action{
+                    display: flex;
+                    .pdt_action_icon{
+                        font-size: 1.5rem;
+                        cursor: pointer;
+                        &:first-child{
+                            margin-right: 0.5rem;
+                        }
+                    }
+                }
+            }
+            .actual_price{
+                font-size: 1.2rem;
+                margin-top: 0.8rem;
+                font-weight: 500;
+            }
+            .discount_price{
+                span{
+                    &:first-child{
+                        text-decoration: line-through;
+                        text-decoration-color: $primaryColor;
+                    }
+                    &:last-child{
+                        color: $primaryColor;
+                    }
+                }
+                
+            }
+            .hashtag_rating{
+                margin: 0.4rem 0;
+                img{
+                    height: 1.4rem;
+                    width: 1.46rem;
+                }
+            }
+        }
+    }
+}

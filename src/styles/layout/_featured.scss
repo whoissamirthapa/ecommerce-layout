@@ -1,0 +1,72 @@
+@import "../abstract/mixin";
+@import "../abstract//variable";
+
+.featured_cotainer{
+    font-size: 1.5rem;
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+    display: flex;
+    .categories_container{
+        width: 25rem;
+        border: 0.1rem solid #F4EFEF;
+        background-color: white;
+        .categories_list{
+            list-style: none;
+            .active_category{
+                font-weight: 500;
+                border-bottom: 0.2rem solid #F4EFEF !important;
+            }
+            li{
+                padding: 1rem 2rem;
+                border-bottom: 0.1rem solid #F4EFEF;
+                cursor: pointer;
+                .categories_icon{
+                    margin-right: 1rem;
+                    color: black;
+                }
+            }
+            li:not(:first-child){
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+    .featured_image{
+        width: calc(100% - 25rem);
+        margin-left: 1.5rem;
+        display: flex;
+        font-size: 2.5rem;
+        .featured_text{
+            display: flex;
+            align-items: center;
+            background-color:  #FFF6F3;
+            padding-left: 3rem;
+            width: 40%;
+            div{
+                h1{
+                    .diff_color{
+                        color: $primaryColor;
+                    }
+                }
+                p{
+                    font-size: 1.5rem;
+                }
+                button{
+                    @include loveBtn(10rem, 3.5rem);
+                    margin-top: 5rem;
+                }
+            }
+            
+        }
+        .featured_image_here{
+            height: 100%;
+            width: 60%;
+            background-image: url(../../assests/smartphones.png), linear-gradient(to right, #FFF6F3, #FFF6f3);
+            background-repeat: no-repeat;
+            background-position: center;
+
+        }
+        
+    }
+}

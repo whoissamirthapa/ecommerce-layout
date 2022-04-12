@@ -1,0 +1,182 @@
+@import '../abstract/variable';
+@import '../layout/hashtag';
+@import '../abstract/mixin';
+
+.new_year_stock_container{
+    width: 80%;
+    margin: auto;
+    min-height: 5rem;
+    border: $mainBorder;
+    padding: 4rem 1rem;
+    .new_year_stock_here{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .tag_indv_product{
+            width: 29rem;
+            border: $mainBorder;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            .indv_featured_img{
+                img{
+                    width: 100%;
+                    max-width: 27rem;
+                }
+            }
+            .indv_product_title{
+                display: flex;
+                justify-content: space-between;
+                font-size: 1.5rem;
+                margin-top: 1rem;
+                .indv_pdt_title{
+                    font-weight: 500;
+                    font-size: 1.5rem;
+                }
+                .indv_pdt_action{
+                    display: flex;
+                    .pdt_action_icon{
+                        font-size: 1.5rem;
+                        cursor: pointer;
+                        &:first-child{
+                            margin-right: 0.5rem;
+                        }
+                    }
+                }
+            }
+            .actual_price{
+                font-size: 1.2rem;
+                margin-top: 0.8rem;
+                font-weight: 500;
+            }
+            .discount_price{
+                span{
+                    &:first-child{
+                        text-decoration: line-through;
+                        text-decoration-color: $primaryColor;
+                    }
+                    &:last-child{
+                        color: $primaryColor;
+                    }
+                }
+                
+            }
+            .hashtag_rating{
+                margin: 0.4rem 0;
+                img{
+                    height: 1.4rem;
+                    width: 1.46rem;
+                }
+            }
+        }
+    }
+    
+}
+
+/* bottom explore */
+
+.bottom_explore_container{
+    width: 80%;
+    margin: 4rem auto;
+    height: 18rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    color: white;
+    font-size: 2rem;
+    .first_explore{
+        height: 100%;
+        width: 49.5%;
+        background-color: #023680;
+        background-image: url('../../assests/firstExlporebg.png');
+        background-repeat: no-repeat;
+        background-position: 100% 100%;
+        display: flex;
+        align-items: center;
+        padding: 2rem;
+        .first_explore_child{
+            .bottom_explore_btn{
+                margin-top: 2rem;
+                button{
+                    @include loveBtn(10rem, 4rem)
+                }
+            }
+        }
+    }
+    .second_explore{
+        height: 100%;
+        width: 49.5%;
+        background-color: #023680;
+        background-image: url('../../assests/secondExplorebg.png');
+        background-repeat: no-repeat;
+        background-position: 100% 80%;
+        display: flex;
+        align-items: center;
+        padding: 2rem;
+        .second_explore_child{
+            .bottom_explore_btn{
+                margin-top: 2rem;
+                button{
+                    @include loveBtn(10rem, 4rem)
+                }
+            }
+        }
+    }
+}
+
+/* subscribe section */
+.subscribe_container{
+    margin-top: 4rem;
+    width: 100%;
+    background-color: #FFF6F3;
+    padding: 4rem;
+    article{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .subscribe_title{
+            display: flex;
+            width: 50%;
+            justify-content: center;
+            align-items: center;
+                .subscribe_icon_here{
+                    margin-right: 2rem;
+                    .subscribe_icon{
+                        font-size: 5rem;
+                    } 
+                }
+            
+            .subscribe_desc{
+                p{
+                    font-size: 2.5rem;
+                    font-weight: 500;
+                }
+                span{
+                    font-size: 1.3rem;
+                }
+            }
+        }
+        .subscribe_form{
+            width: 50%;
+            form {
+                input{
+                    height: 4rem;
+                    max-width: 25rem;
+                    width: 80%;
+                    padding-left: 1rem;
+                    border-top: 0.1rem solid $primaryColor;
+                    border-bottom: 0.1rem solid $primaryColor;
+                    border-left: 0.1rem solid $primaryColor;
+                    border-right: none;
+                    outline: none;
+                }
+                button{
+                    @include loveBtn(10rem,4rem);
+                    border-top-left-radius: 0 !important;
+                    border-bottom-left-radius: 0 !important;
+                }
+            }
+        }
+    }
+}

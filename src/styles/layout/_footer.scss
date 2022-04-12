@@ -1,0 +1,100 @@
+@import "../abstract/variable";
+
+footer{
+    min-height: 20rem;
+    background-color: $componentBgColor;
+    color: white;
+    .footer_container{
+        width: 80%;
+        margin: auto;
+        .upper{
+            padding: 3rem 0;
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 5rem;
+            border-bottom: $mainBorder;
+            .footer_company_desc{
+                width: 24%;
+                min-width: 10rem;
+                h2{
+                    font-size: 1.8rem;
+                    margin-bottom: 1.5rem;
+                    .diff_color{
+                        color: $primaryColor;
+                    }
+                }
+                p{
+                    font-size: 1.3rem;
+                }
+            }
+            .quick_link{
+                width: 24%;
+                min-width: 10rem;
+                h2{
+                    font-size: 1.8rem;
+                    margin-bottom: 1.5rem;
+                }
+                ol{
+                    list-style: none;
+                    font-size: 1.3rem;
+                    li{
+                        padding: 0.5rem 0.5rem;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .customer_link{
+                width: 24%;
+                min-width: 10rem;
+                font-size: 1.3rem;
+                h2{
+                    font-size: 1.8rem;
+                    margin-bottom: 1.5rem;
+                    
+                }
+                ol{
+                    list-style: none;
+                    li{
+                        padding: 0.5rem 0.5rem;
+                        .footer_icon{
+                            margin-right: 1rem;
+                            font-size: 1.5rem;
+                        }
+                        a{
+                            color: white;
+                        }
+                    }
+                }
+            }
+            .follow_us{
+                width: 24%;
+                min-width: 10rem;
+                h2{
+                    font-size: 1.8rem;
+                    margin-bottom: 1.5rem;
+                }
+                div{
+                    a{
+                        cursor: pointer;
+                        .footer_icon_social{
+                            color: white;
+                            font-size: 3rem;
+                            display: inline-block;
+                            margin-right: 1rem;
+                        }
+                        
+                    }
+                }
+                
+            }
+        }
+        .bottom{
+            padding-top: 1.5rem;
+            padding-bottom: 2.1rem;
+            font-size: 1.4rem;
+            display: flex;
+            justify-content: center;
+        }
+        
+    }
+}

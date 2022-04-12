@@ -1,0 +1,22 @@
+@import 'variable';
+@mixin centerMe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin loveBtn($width, $height) {
+    width: $width;
+    height: $height;
+    border-radius: 0.2rem;
+    background-color: $primaryColor;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 400ms linear;
+    &:hover{
+        box-shadow: 0 0 5px 2px #d4cecc;
+    }
+}

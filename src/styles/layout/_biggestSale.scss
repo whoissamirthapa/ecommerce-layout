@@ -1,0 +1,53 @@
+.biggestSale_container{
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+    display: flex;
+    height: 35rem;
+    .desc_sale{
+        background-color: #FFF6F3;
+        font-size: 4.8rem;
+        width: 30%;
+        padding: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        div{
+            width: 100%;
+            .desc_union{
+                margin-bottom: -2rem;
+            }
+            .biggest_text{
+                padding-left: 1.5rem;
+            }
+            .sale_text{
+                text-align: end;
+                color: $primaryColor;
+                width: 100%;
+            }
+            div{
+                font-weight: 500;
+                text-transform: uppercase;
+                .vertical_text{
+                    font-size: 1.5rem;
+                    display: inline-block;
+                    vertical-align: middle;
+                    transform: rotate(-90deg);
+                    margin-right: -2rem;
+                    margin-bottom: 1rem;
+                }
+                .diff_color{
+                    color: $primaryColor;
+                }
+            }
+        }
+        
+    }
+    .img_sale{
+        width: 70%;
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
