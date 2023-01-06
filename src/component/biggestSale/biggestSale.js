@@ -25,7 +25,7 @@ const BiggestSale = () => {
             
         </div>
         <div className='img_sale'>
-            <img src={BiggestSaleWatch} alt="image sale" />
+            <img src={BiggestSaleWatch} alt="sale" />
         </div>
     </section>
   )
