@@ -42,16 +42,16 @@ const Footer = () => {
                 <article className='follow_us'>
                     <h2>Follow us on</h2>
                     <div>
-                        <a href='#' target={"_blank"}>
+                        <a href='https://facebook.com' target={"_blank"}>
                             <FaFacebookSquare className="footer_icon_social" />
                         </a>
-                        <a href='#' target={"_blank"}>
+                        <a href='https://twitter.com' target={"_blank"}>
                             <FaTwitterSquare className="footer_icon_social" />
                         </a>
-                        <a href='#' target={"_blank"}>
+                        <a href='https://instagram.com' target={"_blank"}>
                             <FaInstagramSquare className="footer_icon_social" />
                         </a>
-                        <a href='#' target={"_blank"}>
+                        <a href='https://linkedin.com/in/feed' target={"_blank"}>
                             <FaLinkedin className="footer_icon_social" />
                         </a>
                     </div>
